@@ -27,6 +27,14 @@ pipeline{
                 }
             }
         }
+          stage('test Container') {
+                    steps {
+                        script {
+                            // Arrêter et supprimer un conteneur existant
+                            sh 'echp "test"'
+                        }
+                    }
+                }
 
         stage('Push Image') {
             steps {

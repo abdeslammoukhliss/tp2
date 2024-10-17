@@ -31,7 +31,7 @@ pipeline{
                     steps {
                         script {
                             // Arrêter et supprimer un conteneur existant
-                            sh 'echp "test"'
+                            sh 'echo "test"'
                         }
                     }
                 }
